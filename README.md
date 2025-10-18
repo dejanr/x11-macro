@@ -44,7 +44,7 @@ Record your mouse movements and keyboard inputs:
 x11-macro record my-automation
 ```
 
-The recording will start immediately. Press `F9` to stop recording (configurable in `xmacro.ini`).
+The recording will start immediately. Press `Esc` to stop recording (configurable in `xmacro.ini`).
 
 ### Playing a Macro
 
