@@ -1,0 +1,6 @@
+result*
+macros
+
+# Nix
+.direnv/
+flake.lock
