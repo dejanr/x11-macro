@@ -13,7 +13,7 @@ A lightweight wrapper around `xmacrorec2` and `xmacroplay`, for recording and pl
 nix run github:dejanr/x11-macro
 
 # Install to profile
-nix profile install github:user/x11-macro
+nix profile install github:dejanr/x11-macro
 ```
 
 ### Development Environment
@@ -100,7 +100,7 @@ ScreenshotKey=72     # F6 key (X11 keycode) - Press to take screenshot
 | File | Purpose | Location |
 |------|---------|----------|
 | [`xmacro.ini`](./xmacro.ini) | Recording & playback settings | Project root |
-| `*.macro` | Recorded macro files | User-defined (e.g., `./macros/`) |
+| `*.macro`    | Recorded macro files | User-defined (e.g., `./macros/`) |
 
 ### Exit Codes
 
