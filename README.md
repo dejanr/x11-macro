@@ -96,10 +96,10 @@ nix build
 4. Test with `nix build`
 5. Submit a pull request
 
-📖 **References:**
+📖 **References &Notes:**
 - [xmacro Documentation](http://xmacro.sourceforge.net/)
 - [X11 Keycode Reference](https://gitlab.freedesktop.org/xorg/xserver/-/blob/master/include/keynames.h)
-- Find any keycode: Run `xev` and press the desired key
+- To find a keycode: Run `xev` and press the desired key
 
 ---
 
