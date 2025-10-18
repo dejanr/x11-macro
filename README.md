@@ -17,7 +17,7 @@ nix run github:dejanr/x11-macro
 Install to profile:
 
 ```bash
-nix profile install github:dejanr/x11-macro
+nix profile add github:dejanr/x11-macro
 ```
 
 To pass arguments with nix run, we have to pass them after delimiter:
