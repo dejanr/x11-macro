@@ -8,18 +8,23 @@ A lightweight wrapper around `xmacrorec2` and `xmacroplay`, for recording and pl
 
 ### Using Nix Flakes
 
-```bash
-# Run directly without installation
-nix run github:dejanr/x11-macro
+Run directly without installation:
 
-# Install to profile
+```bash
+nix run github:dejanr/x11-macro
+```
+
+Install to profile:
+
+```bash
 nix profile install github:dejanr/x11-macro
 ```
 
 ### Development Environment
 
+Enter development shell with all dependencies
+
 ```bash
-# Enter development shell with all dependencies
 nix develop
 ```
 
