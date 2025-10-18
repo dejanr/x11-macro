@@ -1,5 +1,3 @@
 result*
+.direnv*
 macros
-
-# Nix
-.direnv/
