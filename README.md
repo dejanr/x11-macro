@@ -20,7 +20,7 @@ Install to profile:
 nix profile install github:dejanr/x11-macro
 ```
 
-To pass arguments with nix run we have to use double minus:
+To pass arguments with nix run, we have to pass them after delimiter:
 
 ```bash
 nix run github:dejanr/x11-macro -- record test
