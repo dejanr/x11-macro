@@ -23,12 +23,10 @@
           ];
 
           shellHook = ''
-            echo "🎯 X11 Macro Shell"
-            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-            echo "Available commands:"
+            echo "X11 Macro Shell"
+            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
             echo "  nix build                   # Build the package"
             echo "  nix run                     # Run x11-macro"
-            echo "  nix develop                 # Enter this shell"
             echo ""
           '';
         };
@@ -40,6 +38,7 @@
         x11-macro = {
           type = "app";
           program = "${self'.packages.x11-macro}/bin/x11-macro";
+          meta.description = "A lightweight wrapper around xmacrorec2 and xmacroplay";
         };
       };
 
@@ -49,16 +48,16 @@
         format =
           pkgs.runCommand "check-format"
             {
-              buildInputs = [ pkgs.nixpkgs-fmt ];
+              buildInputs = [ pkgs.nixfmt-rfc-style ];
             }
             ''
               mkdir $out
-              nixpkgs-fmt --check ${../flake.nix}
-              nixpkgs-fmt --check ${./flake-module.nix}
-              nixpkgs-fmt --check ${../default.nix}
+              nixfmt --check ${../flake.nix}
+              nixfmt --check ${./flake-module.nix}
+              nixfmt --check ${./package.nix}
             '';
       };
 
-      formatter = pkgs.nixpkgs-fmt;
+      formatter = pkgs.nixfmt-tree;
     };
 }

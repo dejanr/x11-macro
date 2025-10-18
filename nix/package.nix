@@ -56,11 +56,6 @@ pkgs.writeShellApplication {
       echo "  record <filename>       record a new macro to file"
       echo "  help                    show this help message"
       echo ""
-      echo "examples:"
-      echo "  x11-macro play mine 5           # play mine macro 5 times"
-      echo "  x11-macro play macros/bow 1     # play bow macro once"
-      echo "  x11-macro record new-macro      # record new macro"
-      echo ""
     }
 
     case $option in
