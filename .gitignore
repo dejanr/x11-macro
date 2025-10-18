@@ -3,4 +3,3 @@ macros
 
 # Nix
 .direnv/
-flake.lock
