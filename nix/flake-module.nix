@@ -22,13 +22,14 @@
             xdotool
           ];
 
-          shellHook = ''
-            echo "X11 Macro Shell"
-            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-            echo "  nix build                   # Build the package"
-            echo "  nix run                     # Run x11-macro"
-            echo ""
-          '';
+          shellHook = # bash
+            ''
+              echo "X11 Macro Shell"
+              echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+              echo "  nix build                   # Build the package"
+              echo "  nix run                     # Run x11-macro"
+              echo ""
+            '';
         };
       };
 
